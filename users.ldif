@@ -1,0 +1,13 @@
+dn: uid=hari,ou=users,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: krb5KDCEntry
+objectClass: inetOrgPerson
+objectClass: krb5Principal
+objectClass: person
+objectClass: organizationalPerson
+cn: GN
+krb5KeyVersionNUmber: 0
+krb5PrincipalName: hari@EXAMPLE.COM
+sn: n
+uid: hari
+userPassword: test

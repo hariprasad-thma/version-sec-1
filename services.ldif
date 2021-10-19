@@ -1,0 +1,35 @@
+dn: uid=hostldap,ou=services,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: oraganizationalUnit
+objectClass: krb5KDCEntry
+objectClass: uidObject
+objectClass: krb5Principal
+krb5KeyVersionNumber: 0
+krb5PrincipalName: ldap/example.net@EXAMPLE.COM
+uid: hostldap
+userPassword: secret
+ou: LDAP
+
+dn: uid=krbtgt,ou=services,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: oraganizationalUnit
+objectClass: krb5KDCEntry
+objectClass: uidObject
+objectClass: krb5Principal
+krb5KeyVersionNumber: 0
+krb5PrincipalName: krbtgt/example.net@EXAMPLE.COM
+uid: krbtgt
+userPassword: tester
+ou: TGT
+
+dn: uid=hostldap,ou=services,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: oraganizationalUnit
+objectClass: krb5KDCEntry
+objectClass: uidObject
+objectClass: krb5Principal
+krb5KeyVersionNumber: 0
+krb5PrincipalName: HTTP/example.net@EXAMPLE.COM
+uid: hostldap
+userPassword: secret
+ou: HTTP

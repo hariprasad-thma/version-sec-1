@@ -1,0 +1,16 @@
+#!RESULT ERROR
+#!CONNECTION ldap://localhost:10389
+#!DATE 2021-10-19T09:55:22.829
+#!ERROR  [LDAP result code 54 - loopDetect] LOOP_DETECT: failed for MessageType : ADD_REQUEST Message ID : 140     Add Request : Entry     dn: uid=hostldap,ou=services,dc=security,dc=example,dc=com     objectClass: top     objectClass: oraganizationalUnit     objectClass: krb5KDCEntry     objectClass: uidObject     objectClass: krb5Principal     uid: hostldap     krb5KeyVersionNumber: 0     ou: LDAP     krb5PrincipalName: ldap/example.net@EXAMPLE.COM     userPassword: 0x73 0x65 0x63 0x72 0x65 0x74  : ERR_13735_ELEMENT_FOR_OID_DOES_NOT_EXIST OBJECT_CLASS for OID oraganizationalunit does not exist!
+dn: uid=hostldap,ou=services,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: oraganizationalUnit
+objectClass: krb5KDCEntry
+objectClass: uidObject
+objectClass: krb5Principal
+krb5KeyVersionNumber: 0
+krb5PrincipalName: ldap/example.net@EXAMPLE.COM
+uid: hostldap
+userPassword: secret
+ou: LDAP
+

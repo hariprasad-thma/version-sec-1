@@ -1,0 +1,24 @@
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2021-10-19T08:51:55.020
+dn: dc=security,dc=example,dc=com
+objectClass: top
+objectClass: domain
+dc: security
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2021-10-19T08:51:55.052
+dn: ou=services,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: services
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2021-10-19T08:51:55.068
+dn: ou=users,dc=security,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
